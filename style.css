@@ -1,0 +1,100 @@
+.buttonHolder{ text-align: center; }
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: crimson;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: rgb(184, 17, 51);
+}
+
+label{
+  display:block;
+  width: 100%;
+  text-align: center;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-radius: 8px;
+  background-color:antiquewhite;
+}
+
+form{
+  margin: auto;
+  width: 50%;
+  border: none;
+  padding: 10px;
+}
+
+input[type=submit]{
+  width: 20%;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background-color: crimson;
+  color:whitesmoke;
+}
+
+input[type=submit]:hover{
+  width: 20%;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background-color: rgb(184, 17, 51);
+  color:whitesmoke;
+}
+
+textarea{
+  width: 99.9%;
+  height: auto;
+  border: dashed;
+  text-align: center;
+  background-color: antiquewhite;
+}
+
+label[id=about]{
+  padding-top: 30px;
+}
+
+label[id=about2]{
+  width: 99.7%;
+  background-color: black;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: red;
+  border: solid;
+}
+
+label[id=names]{
+  width: 99.7%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-size: larger;
+  border: dashed;
+}
+
+body{
+  background: rgb(255,225,193);
+  background: linear-gradient(90deg, rgba(255,225,193,1) 30%, rgba(255,205,205,1) 75%);
+}

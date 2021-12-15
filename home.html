@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>455 Project</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <script src="AES.js"></script>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li style="float:right"><a class="active" href="about.html">About</a></li>
+        </ul>
+        <form onsubmit="return false">
+            <label for="msg">Message in Hex:</label>
+            <input type="text" id="msg" name="msg" required><br>
+            <label for="key">Key in Hex:</label>
+            <input type="text" id="key" name="key" required><br>
+            <label for="error" id="err_label" style="display:none;">Error:</label>
+            <input type="text" id="error" name="error" readonly hidden><br>
+            <label for="answer" id="ans_label" style="display:none;" >Encrypted Message in Hex:</label>
+            <input type="text" id="answer" name="answer" style="text-align: center;" readonly hidden><br>
+            <div class="buttonHolder">
+                <input type="submit" value="SUBMIT" onclick="AES()">
+            </div>
+        </form>
+        <textarea rows="1" onfocus="new do_resize(this);" id="AES" readonly hidden></textarea>
+    </body>
+</html>
